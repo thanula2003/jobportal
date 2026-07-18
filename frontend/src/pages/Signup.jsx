@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../config/api";
 
 const Signup = () => {
 
@@ -63,7 +63,7 @@ const Signup = () => {
           return;
         }
 
-        const res = await axios.post("http://localhost:5000/company/register", {
+        const res = await api.post("/company/register", {
           name:      formData.name,
           address:   formData.address,
           br_number: formData.br,

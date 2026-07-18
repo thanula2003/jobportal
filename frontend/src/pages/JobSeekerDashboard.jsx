@@ -1,6 +1,7 @@
+//JobSeekerDashboard.jsx
 import { useState, useEffect, useMemo, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../config/api";
 
 const JobSeekerDashboard = () => {
 
@@ -89,7 +90,7 @@ const JobSeekerDashboard = () => {
     setErrorMsg("");
 
     try {
-      const res = await axios.get("http://localhost:5000/jobs");
+      const res = await api.get("/jobs");
       setJobs(res.data || []);
     } catch (error) {
       console.error(error);

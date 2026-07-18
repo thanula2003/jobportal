@@ -1,3 +1,4 @@
+//PendingApproval.jsx
 import { Link } from "react-router-dom";
 
 const PendingApproval = () => {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../config/api";
 
 const CompanyDashboard = () => {
 
@@ -64,8 +64,8 @@ const CompanyDashboard = () => {
 
     try {
 
-      const res = await axios.get(
-        `http://localhost:5000/company/jobs/${company.id}`
+      const res = await api.get(
+        `/company/jobs/${company.id}`
       );
 
       setJobs(res.data);
@@ -104,8 +104,8 @@ const CompanyDashboard = () => {
 
     try {
 
-      const res = await axios.post(
-        "http://localhost:5000/company/post-job",
+      const res = await api.post(
+        "/company/post-job",
         {
           company_id: company.id,
           company_name: company.name,
@@ -159,8 +159,8 @@ const CompanyDashboard = () => {
 
     try {
 
-      await axios.delete(
-        `http://localhost:5000/company/delete-job/${id}`
+      await api.delete(
+        `/company/delete-job/${id}`
       );
 
       fetchJobs();
