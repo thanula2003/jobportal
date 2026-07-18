@@ -1,4 +1,3 @@
-//Login.jsx
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import api from "../config/api";
@@ -26,6 +25,7 @@ const Login = () => {
       password === "1234"
     ) {
 
+      localStorage.setItem("userType", "admin");
       navigate("/admin-dashboard");
       return;
     }
@@ -48,18 +48,43 @@ const Login = () => {
 
       if (res.data.pending) {
 
-        navigate("/pending-approval");
+        navigate("/pendingapproval");
         return;
       }
 
       if (res.data.success) {
 
+        localStorage.setItem("company", JSON.stringify(res.data.company));
+        localStorage.setItem("userType", "company");
         navigate("/company-dashboard");
-
-      } else {
-
-        alert("Invalid Credentials");
+        return;
       }
+
+      /*
+      ==========================
+      JOB SEEKER LOGIN
+      (only tried if company login said "invalid credentials",
+      since the same login form serves both account types)
+      ==========================
+      */
+
+      const jsRes = await api.post(
+        "/jobseeker/login",
+        {
+          email,
+          password
+        }
+      );
+
+      if (jsRes.data.success) {
+
+        localStorage.setItem("jobseeker", JSON.stringify(jsRes.data.jobseeker));
+        localStorage.setItem("userType", "jobseeker");
+        navigate("/jobseeker-dashboard");
+        return;
+      }
+
+      alert("Invalid Credentials");
 
     } catch (error) {
 
