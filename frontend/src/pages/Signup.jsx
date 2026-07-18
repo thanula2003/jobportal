@@ -83,7 +83,7 @@ const Signup = () => {
       /* ── JOB SEEKER REGISTRATION ── */
       else {
 
-        const res = await axios.post("http://localhost:5000/jobseeker/register", {
+        const res = await api.post("/jobseeker/register", {
           name:     formData.name,
           contact:  formData.contact,
           email:    formData.email,
