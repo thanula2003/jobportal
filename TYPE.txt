@@ -1,0 +1,48 @@
+
+We are looking for a skilled, detail-oriented Laravel Developer to join our development team. In this role, you will be responsible for building, maintaining, and scaling robust back-end applications, managing database integrations, and ensuring high performance and responsiveness of applications.
+
+You will collaborate closely with front-end developers, UI/UX designers, and project managers to translate business requirements into clean, maintainable, and secure PHP code.
+
+Key Responsibilities
+Application Development: Design, develop, and maintain web applications using the Laravel framework, adhering to standard PSR coding practices.
+
+API Integration: Build and consume RESTful APIs and handle third-party integrations (payment gateways, authentication services, etc.).
+
+Database Management: Design schema structures, optimize complex SQL queries, and manage database migrations (MySQL, PostgreSQL, etc.).
+
+Performance Optimization: Identify and fix bottlenecks, optimize application speed, and improve overall system scalability.
+
+Testing & Security: Implement secure coding practices (protecting against SQL injection, XSS, and CSRF) and write unit/feature tests using PHPUnit.
+
+Collaboration: Work with the front-end team to seamlessly integrate user-facing elements with server-side logic.
+
+Required Skills & Qualifications
+Core PHP Expertise: Deep understanding of modern PHP (OOP, MVC architecture, design patterns, and namespaces).
+
+Laravel Framework: Strong hands-on experience with core Laravel features (Eloquent ORM, Blade templating, Migrations, Seeders, Queues, Observers, and Middleware).
+
+Database Knowledge: Proficiency in writing and optimizing SQL queries using relational databases like MySQL or PostgreSQL.
+
+Front-End Familiarity: Basic understanding of front-end technologies (HTML5, CSS3, JavaScript) and how they interface with blade views or modern single-page apps (SPAs).
+
+Version Control: Strong experience using Git and collaborative workflows (GitHub, GitLab, or Bitbucket).
+
+Environment Tools: Familiarity with package managers like Composer and NPM.
+
+Nice-to-Have Skills (Bonus)
+Experience with full-stack setups like the MERN stack, Vue.js, or Livewire/Alpine.js.
+
+Experience with containerization tools like Docker.
+
+Familiarity with cloud hosting and deployment platforms (AWS, DigitalOcean, Heroku, or Vercel/Railway for serverless elements).
+
+Knowledge of Redis for caching or queue management.
+
+What We Offer
+Competitive salary based on experience.
+
+Flexible working hours or remote work opportunities.
+
+Opportunities for career growth and professional development.
+
+A collaborative and innovative tech environment.
