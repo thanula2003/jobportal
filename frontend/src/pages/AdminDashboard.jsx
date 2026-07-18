@@ -50,7 +50,7 @@ const AdminDashboard = () => {
     try {
 
       const res = await api.get(
-        /admin/pending-companies"
+        "/admin/pending-companies"
       );
 
       setPendingCompanies(res.data);
@@ -72,7 +72,7 @@ const AdminDashboard = () => {
     try {
 
       const res = await api.get(
-        /admin/all-companies"
+        "/admin/all-companies"
       );
 
       setCompanies(res.data);
@@ -94,7 +94,7 @@ const AdminDashboard = () => {
     try {
 
       const res = await api.get(
-        /admin/all-jobs"
+        "/admin/all-jobs"
       );
 
       setJobs(res.data);
@@ -116,7 +116,7 @@ const AdminDashboard = () => {
     try {
 
       const res = await api.get(
-        /admin/jobseekers"
+        "/admin/jobseekers"
       );
 
       setJobSeekers(res.data);
